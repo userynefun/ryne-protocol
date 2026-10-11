@@ -1,0 +1,71 @@
+:root {
+  /* Brand sources. Exact modal pixels measured from brand/LOGO RYNE PNG.png (2000x2000, RGBA, 8-bit).
+     ground : most frequent dark pixel of the artwork field   6, 10, 15      (309,316 px)
+     white  : most frequent pixel of the left-hand marks       254, 254, 254    (148,721 px)
+     blue   : most frequent pixel of the right-hand marks      14, 82, 253      (71,477 px)
+     These three are the only colour literals in the project. Everything else is derived from them. */
+  --brand-ground: #060A0F;
+  --brand-white: #FEFEFE;
+  --brand-blue: #0E52FD;
+
+  /* derived surfaces (mixes of the three sources only) */
+  --paper: color-mix(in oklab, var(--brand-white) 95%, var(--brand-blue) 5%);
+  --paper-2: color-mix(in oklab, var(--brand-white) 90%, var(--brand-blue) 10%);
+  --surface: var(--brand-white);
+  --surface-2: color-mix(in oklab, var(--brand-white) 97.5%, var(--brand-blue) 2.5%);
+  --ink: var(--brand-ground);
+  --ink-2: color-mix(in oklab, var(--brand-ground) 88%, var(--brand-blue) 12%);
+  --ink-glow: color-mix(in oklab, var(--brand-ground) 62%, var(--brand-blue) 38%);
+  --on-ink: var(--brand-white);
+  --on-ink-dim: color-mix(in oklab, var(--brand-white) 68%, var(--brand-ground) 32%);
+  --accent: var(--brand-blue);
+  --accent-soft: color-mix(in oklab, var(--brand-white) 90%, var(--brand-blue) 10%);
+  --on-accent: var(--brand-white);
+
+  /* text */
+  --text: var(--brand-ground);
+  --text-muted: color-mix(in oklab, var(--brand-ground) 62%, var(--brand-white) 38%);
+  --text-dim: color-mix(in oklab, var(--brand-ground) 40%, var(--brand-white) 60%);
+
+  /* lines and veils */
+  --line: color-mix(in oklab, var(--brand-ground) 8%, transparent);
+  --line-strong: color-mix(in oklab, var(--brand-ground) 16%, transparent);
+  --line-on-ink: color-mix(in oklab, var(--brand-white) 14%, transparent);
+  --fill-on-ink: color-mix(in oklab, var(--brand-white) 6%, transparent);
+
+  /* motion and glow */
+  --blob-a: color-mix(in oklab, var(--brand-blue) 22%, transparent);
+  --blob-b: color-mix(in oklab, var(--brand-blue) 12%, transparent);
+  --blob-c: color-mix(in oklab, var(--brand-white) 90%, transparent);
+  --spot: color-mix(in oklab, var(--brand-blue) 9%, transparent);
+  --spot-on-ink: color-mix(in oklab, var(--brand-blue) 28%, transparent);
+  --flash-up: color-mix(in oklab, var(--brand-blue) 20%, transparent);
+  --flash-down: color-mix(in oklab, var(--brand-ground) 10%, transparent);
+  --skel-a: color-mix(in oklab, var(--brand-ground) 6%, transparent);
+  --skel-b: color-mix(in oklab, var(--brand-ground) 12%, transparent);
+  --shadow: 0 1px 2px color-mix(in oklab, var(--brand-ground) 5%, transparent), 0 12px 32px -16px color-mix(in oklab, var(--brand-blue) 28%, transparent);
+  --shadow-sm: 0 1px 2px color-mix(in oklab, var(--brand-ground) 6%, transparent), 0 6px 14px -8px color-mix(in oklab, var(--brand-blue) 30%, transparent);
+  --shadow-lift: 0 2px 4px color-mix(in oklab, var(--brand-ground) 8%, transparent), 0 24px 48px -20px color-mix(in oklab, var(--brand-blue) 45%, transparent);
+
+  --font-sans: "DM Sans", "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Inter Tight", "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  --radius-card: 18px;
+  --radius-panel: 22px;
+  --radius-box: 12px;
+  --radius-chip: 9px;
+  --radius-btn: 10px;
+
+  --tap: 44px;
+  --wrap: 1240px;
+  --header-h: 64px;
+
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-pulse: cubic-bezier(0.4, 0, 0.6, 1);
+  --ease-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  --t-fast: 0.15s;
+  --t-mid: 0.22s;
+  --t-slow: 0.5s;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "ryne",
+  "version": "0.1.0",
+  "description": "Ryne: a calm live view of the loudest corner of Solana.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "gates": "node scripts/gates.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

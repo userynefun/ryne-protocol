@@ -1,0 +1,10 @@
+{
+  "source": "brand/LOGO RYNE PNG.png",
+  "colourType": 6,
+  "size": [2000, 2000],
+  "alpha": { "zero": 0, "full": 4000000, "partial": 0 },
+  "ground": { "rgb": [6, 10, 15], "note": "modal dark pixel of the artwork field" },
+  "white": { "rgb": [254, 254, 254], "pixels": 148721, "note": "modal pixel of the left-hand marks" },
+  "blue": { "rgb": [14, 82, 253], "pixels": 71477, "note": "modal pixel of the right-hand marks" },
+  "sibling": { "brand/LOGO RYNE JPG.jpg.jpeg": "same artwork, 3 components, no alpha", "brand/LOGO RYNE PNG...png": "RGBA, 90.2% transparent, marks only; blue mode (14,82,253), white mode (253,253,253)" }
+}
